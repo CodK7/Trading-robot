@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.aistudio.autoflow.bxyp.app-mergeReleaseResources-1:/values/values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Almoayad\\OneDrive\\Desktop\\Trading robot\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "279"
+                    },
+                    "to": {
+                        "startLines": "14",
+                        "startColumns": "4",
+                        "startOffsets": "1227",
+                        "endLines": "18",
+                        "endColumns": "12",
+                        "endOffsets": "1490"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Almoayad\\OneDrive\\Desktop\\Trading robot\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "3,2,1,4,6,5,8,9,7,11,12,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "145,62,16,367,522,443,718,838,642,988,1097,934",
+                        "endColumns": "221,82,45,75,119,78,119,95,75,108,90,53",
+                        "endOffsets": "362,140,57,438,637,517,833,929,713,1092,1183,983"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,277,360,406,482,602,681,801,897,973,1082,1173",
+                        "endColumns": "221,82,45,75,119,78,119,95,75,108,90,53",
+                        "endOffsets": "272,355,401,477,597,676,796,892,968,1077,1168,1222"
+                    }
+                }
+            ]
+        }
+    ]
+}

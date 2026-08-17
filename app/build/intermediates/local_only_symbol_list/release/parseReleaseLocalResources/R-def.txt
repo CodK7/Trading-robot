@@ -1,0 +1,18 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_launcher
+string accessibility_description
+string accessibility_service_name
+string app_name
+string notification_channel_name
+string notification_text
+string notification_title
+string status_accessibility_disabled
+string status_enable_accessibility
+string status_mt5_missing
+string status_starting
+string status_stopped
+string symbol_value
+style AppTheme
+xml accessibility_service_config
+xml data_extraction_rules

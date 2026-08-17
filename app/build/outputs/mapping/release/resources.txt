@@ -1,0 +1,16 @@
+drawable:ic_launcher:2130771968 reachable from AndroidManifest.xml
+string:symbol_value:2130837515 reachable from Field int com.aistudio.autoflow.bxyp.R$string.symbol_value
+string:notification_channel_name:2130837507 reachable from Field int com.aistudio.autoflow.bxyp.R$string.notification_channel_name
+string:notification_title:2130837509 reachable from Field int com.aistudio.autoflow.bxyp.R$string.notification_title
+string:status_accessibility_disabled:2130837510 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_accessibility_disabled
+string:status_stopped:2130837514 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_stopped
+string:accessibility_service_name:2130837505 reachable from AndroidManifest.xml
+string:app_name:2130837506 reachable from AndroidManifest.xml
+string:status_mt5_missing:2130837512 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_mt5_missing
+style:AppTheme:2130903040 reachable from AndroidManifest.xml
+string:accessibility_description:2130837504 reachable from res/xml/accessibility_service_config.xml
+string:status_enable_accessibility:2130837511 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_enable_accessibility
+string:status_starting:2130837513 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_starting
+xml:accessibility_service_config:2130968576 reachable from AndroidManifest.xml
+string:notification_text:2130837508 reachable from Field int com.aistudio.autoflow.bxyp.R$string.notification_text
+xml:data_extraction_rules:2130968577 reachable from AndroidManifest.xml

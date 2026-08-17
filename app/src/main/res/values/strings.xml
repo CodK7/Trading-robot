@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AutoFlow</string>
+    <string name="accessibility_service_name">MT5 market-order automation</string>
+    <string name="accessibility_description">Executes only an explicit BUY or SELL request in MetaTrader 5 after verifying XAUUSD, 0.01 lot, market execution, and an unambiguous button. It cannot view other apps.</string>
+    <string name="notification_channel_name">MT5 market automation</string>
+    <string name="notification_title">MT5 market automation is active</string>
+    <string name="notification_text">Only explicit XAUUSD market-order requests can run after all checks pass.</string>
+    <string name="status_mt5_missing">تطبيق MetaTrader 5 غير مثبت.</string>
+    <string name="status_accessibility_disabled">فعّل خدمة MT5 lot automation من إعدادات إمكانية الوصول أولًا.</string>
+    <string name="status_enable_accessibility">فعّل خدمة إمكانية الوصول ثم عد إلى هنا.</string>
+    <string name="symbol_value">Symbol: %1$s</string>
+    <string name="status_starting">Automation starting. Open the XAUUSD market-order screen in MT5.</string>
+    <string name="status_stopped">Stopped. No new BUY or SELL command is allowed.</string>
+</resources>

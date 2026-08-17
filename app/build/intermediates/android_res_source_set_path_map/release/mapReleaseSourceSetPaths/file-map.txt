@@ -1,0 +1,8 @@
+com.aistudio.autoflow.bxyp.app-pngs-0 C:\Users\Almoayad\OneDrive\Desktop\Trading robot\app\build\generated\res\pngs\release
+com.aistudio.autoflow.bxyp.app-updated_navigation_xml-1 C:\Users\Almoayad\OneDrive\Desktop\Trading robot\app\build\generated\updated_navigation_xml\release
+com.aistudio.autoflow.bxyp.app-packageReleaseResources-2 C:\Users\Almoayad\OneDrive\Desktop\Trading robot\app\build\intermediates\incremental\release\packageReleaseResources\merged.dir
+com.aistudio.autoflow.bxyp.app-packageReleaseResources-3 C:\Users\Almoayad\OneDrive\Desktop\Trading robot\app\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
+com.aistudio.autoflow.bxyp.app-merged-not-compiled-resources-4 C:\Users\Almoayad\OneDrive\Desktop\Trading robot\app\build\intermediates\merged-not-compiled-resources\release
+com.aistudio.autoflow.bxyp.app-release-5 C:\Users\Almoayad\OneDrive\Desktop\Trading robot\app\build\intermediates\merged_res\release\mergeReleaseResources
+com.aistudio.autoflow.bxyp.app-main-6 C:\Users\Almoayad\OneDrive\Desktop\Trading robot\app\src\main\res
+com.aistudio.autoflow.bxyp.app-release-7 C:\Users\Almoayad\OneDrive\Desktop\Trading robot\app\src\release\res
