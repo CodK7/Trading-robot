@@ -1,2 +1,3 @@
 -keep class com.aistudio.autoflow.bxyp.MainActivity { <init>(); }
+-keep class com.aistudio.autoflow.bxyp.service.AutomationActionReceiver { <init>(); }
 -keep class com.aistudio.autoflow.bxyp.service.LotAutomationService { <init>(); }

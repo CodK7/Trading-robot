@@ -1,5 +1,6 @@
 package com.aistudio.autoflow.bxyp.core
 
+import java.math.BigDecimal
 import java.util.Locale
 
 enum class TradeSide { BUY, SELL }
@@ -8,10 +9,11 @@ enum class TradeSide { BUY, SELL }
 object TradePolicy {
     const val BASE_SYMBOL = "XAUUSD"
     const val FIXED_LOT = "0.01"
+    private val symbolPattern = Regex("^XAUUSD[A-Z0-9._-]*$")
 
     fun acceptableSymbol(value: String?): Boolean {
         val symbol = value?.trim()?.uppercase(Locale.ROOT) ?: return false
-        return symbol.matches(Regex("^XAUUSD[A-Z0-9._-]*$"))
+        return symbol.matches(symbolPattern)
     }
 
     fun buttonLabelMatches(value: String?, side: TradeSide): Boolean {
@@ -33,8 +35,11 @@ object TradePolicy {
             label.contains("تنفيذ السوق") || label.contains("تنفيذ فوري")
     }
 
-    fun isDemoAccountLabel(value: String?): Boolean {
+    fun isExnessLabel(value: String?): Boolean {
         val label = value?.lowercase(Locale.ROOT).orEmpty()
-        return label.contains("demo") || label.contains("trial") || label.contains("تجريبي")
+        return label.contains("exness") || label.contains("إكسنس")
     }
+
+    fun isFixedLot(value: CharSequence?): Boolean =
+        value?.toString()?.trim()?.replace(',', '.')?.toBigDecimalOrNull()?.compareTo(BigDecimal(FIXED_LOT)) == 0
 }

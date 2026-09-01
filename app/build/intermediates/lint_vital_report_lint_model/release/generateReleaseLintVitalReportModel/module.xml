@@ -4,7 +4,7 @@
     name=":app"
     type="APP"
     maven="Mt5LotController:app:unspecified"
-    agpVersion="9.1.1"
+    agpVersion="9.3.2"
     buildFolder="build"
     bootClassPath="C:\Users\Almoayad\AppData\Local\Android\Sdk\platforms\android-36\android.jar;C:\Users\Almoayad\AppData\Local\Android\Sdk\build-tools\36.0.0\core-lambda-stubs.jar"
     javaSourceLevel="17"

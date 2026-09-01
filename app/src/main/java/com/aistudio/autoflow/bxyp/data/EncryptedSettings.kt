@@ -32,6 +32,22 @@ class EncryptedSettings(context: Context) {
         ?.toList()
         .orEmpty()
 
+    @Synchronized
+    fun writeStep(value: String) = putEncrypted(STEP_NAME, value)
+
+    @Synchronized
+    fun readStep(defaultValue: String): String = decrypt(STEP_NAME) ?: defaultValue
+
+    @Synchronized
+    fun writeReferenceOffset(value: String) = putEncrypted(OFFSET_NAME, value)
+
+    @Synchronized
+    fun readReferenceOffset(defaultValue: String): String = decrypt(OFFSET_NAME) ?: defaultValue
+
+    private fun putEncrypted(name: String, value: String) {
+        preferences.edit().putString(name, encrypt(value)).apply()
+    }
+
     private fun key(): SecretKey {
         val store = KeyStore.getInstance(ANDROID_KEYSTORE).apply { load(null) }
         (store.getKey(KEY_ALIAS, null) as? SecretKey)?.let { return it }
@@ -63,7 +79,6 @@ class EncryptedSettings(context: Context) {
             }
             cipher.doFinal(encrypted).decodeToString()
         } catch (_: Exception) {
-            preferences.edit().remove(name).apply()
             null
         }
     }
@@ -73,5 +88,7 @@ class EncryptedSettings(context: Context) {
         const val KEY_ALIAS = "mt5_lot_settings_aes_v1"
         const val TRANSFORMATION = "AES/GCM/NoPadding"
         const val MAX_LOG_ENTRIES = 50
+        const val STEP_NAME = "adjustment_step"
+        const val OFFSET_NAME = "reference_offset"
     }
 }

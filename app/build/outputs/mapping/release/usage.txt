@@ -1,3 +1,6 @@
+com.aistudio.autoflow.bxyp.MainActivity:
+    private static final com.aistudio.autoflow.bxyp.MainActivity$Companion Companion
+    public static final int NOTIFICATION_PERMISSION_REQUEST
 com.aistudio.autoflow.bxyp.R$drawable:
     private void <init>()
 com.aistudio.autoflow.bxyp.R$string:
@@ -8,6 +11,18 @@ com.aistudio.autoflow.bxyp.R$string:
 com.aistudio.autoflow.bxyp.R$style
 com.aistudio.autoflow.bxyp.R$xml
 com.aistudio.autoflow.bxyp.R
+com.aistudio.autoflow.bxyp.core.AdjustmentPolicy:
+    public static final java.lang.String DEFAULT_STEP
+    public static final java.lang.String ZERO_OFFSET
+com.aistudio.autoflow.bxyp.core.GateAcquireResult$Granted:
+    public final long component1()
+    public final com.aistudio.autoflow.bxyp.core.GateAcquireResult$Granted copy(long)
+    public static synthetic com.aistudio.autoflow.bxyp.core.GateAcquireResult$Granted copy$default(com.aistudio.autoflow.bxyp.core.GateAcquireResult$Granted,long,int,java.lang.Object)
+com.aistudio.autoflow.bxyp.core.GateState:
+    public final boolean component1()
+    public final boolean component2()
+    public final com.aistudio.autoflow.bxyp.core.GateState copy(boolean,boolean)
+    public static synthetic com.aistudio.autoflow.bxyp.core.GateState copy$default(com.aistudio.autoflow.bxyp.core.GateState,boolean,boolean,int,java.lang.Object)
 com.aistudio.autoflow.bxyp.core.TradePolicy:
     public static final java.lang.String BASE_SYMBOL
     public static final java.lang.String FIXED_LOT
@@ -19,7 +34,28 @@ com.aistudio.autoflow.bxyp.data.EncryptedSettings:
     private static final com.aistudio.autoflow.bxyp.data.EncryptedSettings$Companion Companion
     public static final java.lang.String KEY_ALIAS
     public static final int MAX_LOG_ENTRIES
+    public static final java.lang.String OFFSET_NAME
+    public static final java.lang.String STEP_NAME
     public static final java.lang.String TRANSFORMATION
+com.aistudio.autoflow.bxyp.service.AutomationActionReceiver:
+    public static final java.lang.String ACTION_BUY
+    public static final java.lang.String ACTION_SELL
+    public static final java.lang.String ACTION_STOP
+    public static final com.aistudio.autoflow.bxyp.service.AutomationActionReceiver$Companion Companion
+com.aistudio.autoflow.bxyp.service.AutomationState:
+    public final boolean component1()
+    public final boolean component2()
+    public final boolean component3()
+    public final java.lang.String component4()
+    public final java.lang.String component5()
+    public final com.aistudio.autoflow.bxyp.service.AutomationState copy(boolean,boolean,boolean,java.lang.String,java.lang.String)
+    public static synthetic com.aistudio.autoflow.bxyp.service.AutomationState copy$default(com.aistudio.autoflow.bxyp.service.AutomationState,boolean,boolean,boolean,java.lang.String,java.lang.String,int,java.lang.Object)
+    public final boolean getConnected()
+com.aistudio.autoflow.bxyp.service.LotAutomationService$ReadyScreen:
+    public final java.lang.String component1()
+    public final com.aistudio.autoflow.bxyp.service.LotAutomationService$ScreenSnapshot component2()
+    public final com.aistudio.autoflow.bxyp.service.LotAutomationService$ReadyScreen copy(java.lang.String,com.aistudio.autoflow.bxyp.service.LotAutomationService$ScreenSnapshot)
+    public static synthetic com.aistudio.autoflow.bxyp.service.LotAutomationService$ReadyScreen copy$default(com.aistudio.autoflow.bxyp.service.LotAutomationService$ReadyScreen,java.lang.String,com.aistudio.autoflow.bxyp.service.LotAutomationService$ScreenSnapshot,int,java.lang.Object)
 com.aistudio.autoflow.bxyp.service.LotAutomationService$ScreenSnapshot:
     public final java.lang.String component1()
     public final java.util.List component2()
@@ -30,11 +66,20 @@ com.aistudio.autoflow.bxyp.service.LotAutomationService$ScreenSnapshot:
     public final boolean component7()
     public final com.aistudio.autoflow.bxyp.service.LotAutomationService$ScreenSnapshot copy(java.lang.String,java.util.List,java.util.List,java.util.List,boolean,boolean,boolean)
     public static synthetic com.aistudio.autoflow.bxyp.service.LotAutomationService$ScreenSnapshot copy$default(com.aistudio.autoflow.bxyp.service.LotAutomationService$ScreenSnapshot,java.lang.String,java.util.List,java.util.List,java.util.List,boolean,boolean,boolean,int,java.lang.Object)
+    public final java.util.List getBuyButtons()
+    public final boolean getMarketExecution()
+    public final java.util.List getSellButtons()
 com.aistudio.autoflow.bxyp.service.LotAutomationService:
-    public static final java.lang.String CHANNEL_ID
-    private static final com.aistudio.autoflow.bxyp.service.LotAutomationService$Companion Companion
-    public static final int NOTIFICATION_ID
+    private static final java.lang.String CHANNEL_ID
+    private static final long LOT_SETTLE_DELAY_MS
+    private static final int NOTIFICATION_ID
+    private static final long POLL_INTERVAL_MS
+    private static final long SCREEN_WAIT_TIMEOUT_MS
+    private static final java.lang.String UNKNOWN_SYMBOL
 com.aistudio.autoflow.bxyp.service.LotCommands
+com.aistudio.autoflow.bxyp.service.TradeRequestResult:
+    private static final synthetic kotlin.enums.EnumEntries $ENTRIES
+    public static kotlin.enums.EnumEntries getEntries()
 kotlin.ArrayIntrinsicsKt
 kotlin.BuilderInference
 kotlin.CharCodeJVMKt
@@ -3265,7 +3310,6 @@ kotlin.jvm.internal.Intrinsics:
     public static void checkFieldIsNotNull(java.lang.Object,java.lang.String,java.lang.String)
     public static void checkHasClass(java.lang.String)
     public static void checkHasClass(java.lang.String,java.lang.String)
-    public static void checkNotNull(java.lang.Object)
     public static void checkParameterIsNotNull(java.lang.Object,java.lang.String)
     public static void checkReturnedValueIsNotNull(java.lang.Object,java.lang.String)
     public static void checkReturnedValueIsNotNull(java.lang.Object,java.lang.String,java.lang.String)
@@ -3282,7 +3326,6 @@ kotlin.jvm.internal.Intrinsics:
     public static void throwIllegalArgument(java.lang.String)
     public static void throwIllegalState()
     public static void throwIllegalState(java.lang.String)
-    public static void throwJavaNpe()
     public static void throwNpe()
     public static void throwNpe(java.lang.String)
     private static void throwParameterIsNullIAE(java.lang.String)
@@ -3314,6 +3357,7 @@ kotlin.jvm.internal.PropertyReference1Impl
 kotlin.jvm.internal.PropertyReference2
 kotlin.jvm.internal.PropertyReference2Impl
 kotlin.jvm.internal.PropertyReference
+kotlin.jvm.internal.Ref$BooleanRef
 kotlin.jvm.internal.Ref$ByteRef
 kotlin.jvm.internal.Ref$CharRef
 kotlin.jvm.internal.Ref$DoubleRef
@@ -4386,9 +4430,7 @@ kotlin.text.StringsKt__StringsJVMKt:
     public static synthetic boolean regionMatches$default(java.lang.CharSequence,int,java.lang.CharSequence,int,int,boolean,int,java.lang.Object)
     public static synthetic boolean regionMatches$default(java.lang.String,int,java.lang.String,int,int,boolean,int,java.lang.Object)
     public static final java.lang.String repeat(java.lang.CharSequence,int)
-    public static final java.lang.String replace(java.lang.String,char,char,boolean)
     public static final java.lang.String replace(java.lang.String,java.lang.String,java.lang.String,boolean)
-    public static synthetic java.lang.String replace$default(java.lang.String,char,char,boolean,int,java.lang.Object)
     public static synthetic java.lang.String replace$default(java.lang.String,java.lang.String,java.lang.String,boolean,int,java.lang.Object)
     public static final java.lang.String replaceFirst(java.lang.String,char,char,boolean)
     public static final java.lang.String replaceFirst(java.lang.String,java.lang.String,java.lang.String,boolean)
@@ -4397,9 +4439,7 @@ kotlin.text.StringsKt__StringsJVMKt:
     public static final java.util.List split(java.lang.CharSequence,java.util.regex.Pattern,int)
     public static synthetic java.util.List split$default(java.lang.CharSequence,java.util.regex.Pattern,int,int,java.lang.Object)
     public static final boolean startsWith(java.lang.String,java.lang.String,int,boolean)
-    public static final boolean startsWith(java.lang.String,java.lang.String,boolean)
     public static synthetic boolean startsWith$default(java.lang.String,java.lang.String,int,boolean,int,java.lang.Object)
-    public static synthetic boolean startsWith$default(java.lang.String,java.lang.String,boolean,int,java.lang.Object)
     private static final java.lang.String substring(java.lang.String,int)
     private static final java.lang.String substring(java.lang.String,int,int)
     private static final byte[] toByteArray(java.lang.String,java.nio.charset.Charset)
@@ -4860,40 +4900,31 @@ org.jetbrains.annotations.NotNull
 org.jetbrains.annotations.Nullable
 org.jetbrains.annotations.PropertyKey
 org.jetbrains.annotations.TestOnly
+com.aistudio.autoflow.bxyp.MainActivity$Companion
+com.aistudio.autoflow.bxyp.MainActivity$WhenMappings
 com.aistudio.autoflow.bxyp.MainActivity:
-    public final int dp(int)
+    static void <clinit>()
     public final boolean isMt5Installed()
 com.aistudio.autoflow.bxyp.R$drawable
 com.aistudio.autoflow.bxyp.R$string
+com.aistudio.autoflow.bxyp.core.AdjustmentPolicy:
+    public static final com.aistudio.autoflow.bxyp.core.AdjustmentPolicy INSTANCE
+    public static java.lang.String adjust()
 com.aistudio.autoflow.bxyp.core.ExecutionGate:
-    public final synchronized void release(long)
+    public static java.lang.Object runIfCurrent()
     public final synchronized void start()
-    public final synchronized void stop()
-    public final synchronized java.lang.Long tryAcquire()
+    public final synchronized com.aistudio.autoflow.bxyp.core.GateState state()
+    public final synchronized com.aistudio.autoflow.bxyp.core.GateAcquireResult tryAcquire()
+com.aistudio.autoflow.bxyp.core.GateAcquireResult
+com.aistudio.autoflow.bxyp.core.GateState
 com.aistudio.autoflow.bxyp.core.TradePolicy$WhenMappings
 com.aistudio.autoflow.bxyp.core.TradePolicy:
     public static final com.aistudio.autoflow.bxyp.core.TradePolicy INSTANCE
-    static void <clinit>()
     public static boolean acceptableSymbol()
-    public static boolean isDemoAccountLabel()
+    public static boolean isExnessLabel()
+    public static boolean isFixedLot()
     public static boolean isMarketExecutionLabel()
     public static boolean isPendingOrderLabel()
-com.aistudio.autoflow.bxyp.core.TradeSide$EnumUnboxingLocalUtility:
-    static void <clinit>()
-    public static int _valueOf(java.lang.String)
-    public static int[] _values()
-    public static synthetic java.lang.String name(int)
-    public static synthetic int valueOf(java.lang.String)
-com.aistudio.autoflow.bxyp.core.TradeSide$EnumUnboxingSharedUtility:
-    public static final synthetic int[] $VALUES
-    public static synthetic java.lang.Integer boxedOrdinalOrNull(int)
-    public static synthetic void checkNotZero(int)
-    public static synthetic void checkNotZero(int,java.lang.String)
-    public static synthetic int compareTo(int,int)
-    public static synthetic boolean equals(int,int)
-    public static synthetic boolean objects$equals(int,int)
-    public static synthetic int[] values(int)
-com.aistudio.autoflow.bxyp.core.TradeSide
 com.aistudio.autoflow.bxyp.data.EncryptedSettings$Companion
 com.aistudio.autoflow.bxyp.data.EncryptedSettings$appendLog$current$1:
     public final java.lang.Boolean invoke()
@@ -4902,35 +4933,41 @@ com.aistudio.autoflow.bxyp.data.EncryptedSettings$readLog$1:
 com.aistudio.autoflow.bxyp.data.EncryptedSettings:
     static void <clinit>()
     public final synchronized void appendLog()
+    public final void putEncrypted(java.lang.String,java.lang.String)
     public final synchronized java.util.List readLog()
-com.aistudio.autoflow.bxyp.service.LotAutomationService$Companion
-com.aistudio.autoflow.bxyp.service.LotAutomationService$ScreenSnapshot:
-    public static java.util.List getBuyButtons()
-    public static boolean getDemoAccount()
-    public static java.util.List getLotFields()
-    public static boolean getMarketExecution()
-    public static boolean getPendingOrderVisible()
-    public static java.util.List getSellButtons()
-    public static java.lang.String getSymbol()
-com.aistudio.autoflow.bxyp.service.LotAutomationService:
+    public final synchronized java.lang.String readReferenceOffset()
+    public final synchronized java.lang.String readStep()
+    public final synchronized void writeReferenceOffset(java.lang.String)
+    public final synchronized void writeStep()
+com.aistudio.autoflow.bxyp.service.AutomationActionReceiver$Companion
+com.aistudio.autoflow.bxyp.service.AutomationActionReceiver:
     static void <clinit>()
-    public static synthetic void publishResult$default(com.aistudio.autoflow.bxyp.service.LotAutomationService,java.lang.String)
+com.aistudio.autoflow.bxyp.service.AutomationState
+com.aistudio.autoflow.bxyp.service.LotAutomationService$Companion
+com.aistudio.autoflow.bxyp.service.LotAutomationService$ScreenCollector:
+    public final synthetic com.aistudio.autoflow.bxyp.service.LotAutomationService this$0
+    public static void capture()
+    public static com.aistudio.autoflow.bxyp.service.LotAutomationService$ScreenSnapshot snapshot()
+com.aistudio.autoflow.bxyp.service.LotAutomationService$ScreenSnapshot:
+    public final java.util.List buttonFor(com.aistudio.autoflow.bxyp.core.TradeSide)
+    public final boolean isMarketOrderScreen()
+com.aistudio.autoflow.bxyp.service.LotAutomationService:
+    public static final com.aistudio.autoflow.bxyp.service.LotAutomationService$Companion Companion
+    static void <clinit>()
+    public static void publishResult()
+    public static void publishResult$default(com.aistudio.autoflow.bxyp.service.LotAutomationService,java.lang.String)
+    public static com.aistudio.autoflow.bxyp.service.LotAutomationService$ReadyScreen refuseAndNull()
+    public static com.aistudio.autoflow.bxyp.service.TradeRequestResult rejectRequest()
+    public static boolean startAutomation()
+    public static com.aistudio.autoflow.bxyp.service.AutomationState state()
     public final android.view.accessibility.AccessibilityNodeInfo targetRoot()
-kotlin.Pair:
-    public static java.lang.Object component1()
-    public static java.lang.Object component2()
-    public static java.lang.Object getFirst()
-    public static java.lang.Object getSecond()
+    public final boolean waitForUi(long,long)
 kotlin.TuplesKt
-kotlin.Unit
 kotlin.collections.AbstractList$Companion:
     public static void checkElementIndex$kotlin_stdlib()
     public static void checkPositionIndex$kotlin_stdlib()
     public static boolean orderedEquals$kotlin_stdlib()
     public static int orderedHashCode$kotlin_stdlib()
-kotlin.collections.AbstractList$IteratorImpl:
-    public static int getIndex()
-    public static void setIndex()
 kotlin.collections.AbstractList:
     public static final kotlin.collections.AbstractList$Companion Companion
     static void <clinit>()
@@ -4956,13 +4993,11 @@ kotlin.collections.EmptyIterator:
 kotlin.collections.EmptyList:
     public static boolean contains()
     public static java.lang.Void get()
-    public static int getSize()
     public static int indexOf()
     public static int lastIndexOf()
 kotlin.collections.EmptyMap
 kotlin.collections.EmptySet:
     public static boolean contains()
-    public static int getSize()
 kotlin.collections.IntIterator
 kotlin.collections.MapsKt
 kotlin.collections.MapsKt__MapWithDefaultKt
@@ -4984,14 +5019,11 @@ kotlin.jvm.internal.CallableReference:
     public static final kotlin.jvm.internal.CallableReference$NoReceiver NO_RECEIVER
     public final java.lang.String name
     public final java.lang.Class owner
-    public final kotlin.jvm.internal.CallableReference$NoReceiver receiver
+    public final java.lang.Object receiver
     public final java.lang.String signature
     static void <clinit>()
     public final kotlin.reflect.KCallable compute()
     public abstract kotlin.reflect.KCallable computeReflected()
-    public abstract java.lang.Object getBoundReceiver()
-    public abstract java.lang.String getName()
-    public abstract java.lang.String getSignature()
 kotlin.jvm.internal.ClassBasedDeclarationContainer:
     public abstract java.lang.Class getJClass()
 kotlin.jvm.internal.ClassReference$Companion
@@ -5007,7 +5039,6 @@ kotlin.jvm.internal.PackageReference:
     public final java.lang.Class jClass
     public final java.lang.Class getJClass()
 kotlin.jvm.internal.ReflectionFactory:
-    public static kotlin.reflect.KFunction function()
     public static kotlin.jvm.internal.ClassReference getOrCreateKotlinClass()
     public static kotlin.reflect.KDeclarationContainer getOrCreateKotlinPackage()
 kotlin.ranges.IntProgression$Companion
@@ -5015,9 +5046,6 @@ kotlin.ranges.IntProgression:
     public static final kotlin.ranges.IntProgression$Companion Companion
     static void <clinit>()
     public boolean equals(java.lang.Object)
-    public static int getFirst()
-    public static int getLast()
-    public static int getStep()
     public int hashCode()
     public boolean isEmpty()
     public static kotlin.ranges.IntProgressionIterator iterator()
@@ -5057,15 +5085,17 @@ kotlin.text.LinesIterator:
     static void <clinit>()
     public static java.lang.String next()
 kotlin.text.Regex$Companion
-kotlin.text.Regex
+kotlin.text.Regex:
+    static void <clinit>()
+    public static boolean matches()
 kotlin.text.StringsKt__StringsJVMKt:
     public static final boolean regionMatches(java.lang.String,java.lang.String,int,int,boolean)
 kotlin.text.StringsKt__StringsKt$$InternalSyntheticLambda$1$502501cddd73bb162d6ca9a92ded4c57d40d4ff33ca2ed3e06965905455a52cd$0:
     public final synthetic boolean f$1
     public static java.lang.Object invoke()
 kotlin.text.StringsKt__StringsKt:
-    public static final int getLastIndex(java.lang.String)
-    public static int indexOf$StringsKt__StringsKt$default(java.lang.String,java.lang.CharSequence,int,int,boolean)
+    public static final int getLastIndex(java.lang.CharSequence)
+    public static int indexOf$StringsKt__StringsKt$default(java.lang.CharSequence,java.lang.CharSequence,int,int,boolean)
     public static synthetic int indexOf$default(java.lang.String,java.lang.String,int,int)
     public static final void requireNonNegativeLimit()
 kotlin.text.StringsKt___StringsKt

@@ -6,3 +6,4 @@ com.aistudio.autoflow.bxyp.app-merged-not-compiled-resources-4 C:\Users\Almoayad
 com.aistudio.autoflow.bxyp.app-release-5 C:\Users\Almoayad\OneDrive\Desktop\Trading robot\app\build\intermediates\merged_res\release\mergeReleaseResources
 com.aistudio.autoflow.bxyp.app-main-6 C:\Users\Almoayad\OneDrive\Desktop\Trading robot\app\src\main\res
 com.aistudio.autoflow.bxyp.app-release-7 C:\Users\Almoayad\OneDrive\Desktop\Trading robot\app\src\release\res
+gradleHome-0 C:\Users\Almoayad\.gradle

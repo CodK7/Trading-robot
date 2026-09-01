@@ -1,16 +1,54 @@
 drawable:ic_launcher:2130771968 reachable from AndroidManifest.xml
-string:symbol_value:2130837515 reachable from Field int com.aistudio.autoflow.bxyp.R$string.symbol_value
-string:notification_channel_name:2130837507 reachable from Field int com.aistudio.autoflow.bxyp.R$string.notification_channel_name
-string:notification_title:2130837509 reachable from Field int com.aistudio.autoflow.bxyp.R$string.notification_title
-string:status_accessibility_disabled:2130837510 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_accessibility_disabled
-string:status_stopped:2130837514 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_stopped
-string:accessibility_service_name:2130837505 reachable from AndroidManifest.xml
-string:app_name:2130837506 reachable from AndroidManifest.xml
-string:status_mt5_missing:2130837512 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_mt5_missing
-style:AppTheme:2130903040 reachable from AndroidManifest.xml
 string:accessibility_description:2130837504 reachable from res/xml/accessibility_service_config.xml
-string:status_enable_accessibility:2130837511 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_enable_accessibility
-string:status_starting:2130837513 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_starting
+string:accessibility_service_name:2130837505 reachable from AndroidManifest.xml
+string:action_buy:2130837506 reachable from Field int com.aistudio.autoflow.bxyp.R$string.action_buy
+string:action_buy_full:2130837507 reachable from Field int com.aistudio.autoflow.bxyp.R$string.action_buy_full
+string:action_sell:2130837508 reachable from Field int com.aistudio.autoflow.bxyp.R$string.action_sell
+string:action_sell_full:2130837509 reachable from Field int com.aistudio.autoflow.bxyp.R$string.action_sell_full
+string:action_start:2130837510 reachable from Field int com.aistudio.autoflow.bxyp.R$string.action_start
+string:action_stop:2130837511 reachable from Field int com.aistudio.autoflow.bxyp.R$string.action_stop
+string:adjustment_step_description:2130837512 reachable from Field int com.aistudio.autoflow.bxyp.R$string.adjustment_step_description
+string:adjustment_step_label:2130837513 reachable from Field int com.aistudio.autoflow.bxyp.R$string.adjustment_step_label
+string:app_name:2130837514 reachable from AndroidManifest.xml
+string:broker_value:2130837515 reachable from Field int com.aistudio.autoflow.bxyp.R$string.broker_value
+string:lot_value:2130837516 reachable from Field int com.aistudio.autoflow.bxyp.R$string.lot_value
+string:no_operations:2130837517 reachable from Field int com.aistudio.autoflow.bxyp.R$string.no_operations
+string:notification_channel_name:2130837518 reachable from Field int com.aistudio.autoflow.bxyp.R$string.notification_channel_name
+string:notification_text:2130837519 reachable from Field int com.aistudio.autoflow.bxyp.R$string.notification_text
+string:notification_title:2130837520 reachable from Field int com.aistudio.autoflow.bxyp.R$string.notification_title
+string:operation_log_title:2130837521 reachable from Field int com.aistudio.autoflow.bxyp.R$string.operation_log_title
+string:reason_busy:2130837522 reachable from Field int com.aistudio.autoflow.bxyp.R$string.reason_busy
+string:reason_button_unavailable:2130837523 reachable from Field int com.aistudio.autoflow.bxyp.R$string.reason_button_unavailable
+string:reason_click_rejected:2130837524 reachable from Field int com.aistudio.autoflow.bxyp.R$string.reason_click_rejected
+string:reason_foreground_unavailable:2130837525 reachable from Field int com.aistudio.autoflow.bxyp.R$string.reason_foreground_unavailable
+string:reason_lot_not_verified:2130837526 reachable from Field int com.aistudio.autoflow.bxyp.R$string.reason_lot_not_verified
+string:reason_lot_rejected:2130837527 reachable from Field int com.aistudio.autoflow.bxyp.R$string.reason_lot_rejected
+string:reason_lot_unavailable:2130837528 reachable from Field int com.aistudio.autoflow.bxyp.R$string.reason_lot_unavailable
+string:reason_market_mode:2130837529 reachable from Field int com.aistudio.autoflow.bxyp.R$string.reason_market_mode
+string:reason_market_mode_changed:2130837530 reachable from Field int com.aistudio.autoflow.bxyp.R$string.reason_market_mode_changed
+string:reason_mt5_not_visible:2130837531 reachable from Field int com.aistudio.autoflow.bxyp.R$string.reason_mt5_not_visible
+string:reason_pending_order:2130837532 reachable from Field int com.aistudio.autoflow.bxyp.R$string.reason_pending_order
+string:reason_service_unavailable:2130837533 reachable from Field int com.aistudio.autoflow.bxyp.R$string.reason_service_unavailable
+string:reason_stopped:2130837534 reachable from Field int com.aistudio.autoflow.bxyp.R$string.reason_stopped
+string:reason_storage_unavailable:2130837535 reachable from Field int com.aistudio.autoflow.bxyp.R$string.reason_storage_unavailable
+string:reason_symbol_changed:2130837536 reachable from Field int com.aistudio.autoflow.bxyp.R$string.reason_symbol_changed
+string:reason_symbol_unavailable:2130837537 reachable from Field int com.aistudio.autoflow.bxyp.R$string.reason_symbol_unavailable
+string:reference_offset_value:2130837538 reachable from Field int com.aistudio.autoflow.bxyp.R$string.reference_offset_value
+string:screen_title:2130837539 reachable from Field int com.aistudio.autoflow.bxyp.R$string.screen_title
+string:status_accessibility_disabled:2130837540 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_accessibility_disabled
+string:status_armed:2130837541 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_armed
+string:status_checking:2130837542 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_checking
+string:status_enable_accessibility:2130837543 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_enable_accessibility
+string:status_invalid_step:2130837544 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_invalid_step
+string:status_mt5_missing:2130837545 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_mt5_missing
+string:status_ready:2130837546 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_ready
+string:status_refused:2130837547 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_refused
+string:status_service_connecting:2130837548 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_service_connecting
+string:status_stopped:2130837549 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_stopped
+string:status_submitted:2130837550 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_submitted
+string:status_waiting_for_mt5:2130837551 reachable from Field int com.aistudio.autoflow.bxyp.R$string.status_waiting_for_mt5
+string:symbol_value:2130837552 reachable from Field int com.aistudio.autoflow.bxyp.R$string.symbol_value
+string:usage_hint:2130837553 reachable from Field int com.aistudio.autoflow.bxyp.R$string.usage_hint
+style:AppTheme:2130903040 reachable from AndroidManifest.xml
 xml:accessibility_service_config:2130968576 reachable from AndroidManifest.xml
-string:notification_text:2130837508 reachable from Field int com.aistudio.autoflow.bxyp.R$string.notification_text
 xml:data_extraction_rules:2130968577 reachable from AndroidManifest.xml

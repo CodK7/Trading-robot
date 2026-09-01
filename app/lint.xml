@@ -1,5 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
 <lint>
-    <!-- Versions are deliberately pinned to a build-verified AGP/Gradle pair. -->
-    <issue id="AndroidGradlePluginVersion" severity="ignore" />
 </lint>

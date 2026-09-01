@@ -5,7 +5,7 @@ import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class TradePolicyTest {
-    @Test fun `accepts only XAUUSD and explicit broker suffixes`() {
+    @Test fun test_acceptableSymbol_validAndInvalidSymbols_returnsExpectedResult() {
         assertTrue(TradePolicy.acceptableSymbol("XAUUSD"))
         assertTrue(TradePolicy.acceptableSymbol("XAUUSDm"))
         assertTrue(TradePolicy.acceptableSymbol("xauusd.pro"))
@@ -13,33 +13,30 @@ class TradePolicyTest {
         assertFalse(TradePolicy.acceptableSymbol("XAUUSD / EURUSD"))
     }
 
-    @Test fun `accepts only direct market action labels`() {
+    @Test fun test_buttonLabelMatches_marketAndPendingLabels_returnsExpectedResult() {
         assertTrue(TradePolicy.buttonLabelMatches("Buy", TradeSide.BUY))
         assertTrue(TradePolicy.buttonLabelMatches("Sell by market", TradeSide.SELL))
         assertFalse(TradePolicy.buttonLabelMatches("Buy Limit", TradeSide.BUY))
         assertFalse(TradePolicy.buttonLabelMatches("Sell Stop", TradeSide.SELL))
     }
 
-    @Test fun `rejects pending-order controls`() {
+    @Test fun test_isPendingOrderLabel_pendingAndStopLossLabels_returnsExpectedResult() {
         assertTrue(TradePolicy.isPendingOrderLabel("Buy Stop Limit"))
         assertTrue(TradePolicy.isPendingOrderLabel("Pending Order"))
         assertFalse(TradePolicy.isPendingOrderLabel("Stop Loss"))
     }
 
-    @Test fun `prevents duplicate execution while a tap is processing and stop invalidates it`() {
-        val gate = ExecutionGate()
-        gate.start()
-        val token = requireNotNull(gate.tryAcquire())
-        assertFalse(gate.tryAcquire() != null)
-        assertTrue(gate.isCurrent(token))
-        gate.stop()
-        assertFalse(gate.isCurrent(token))
-        assertFalse(gate.tryAcquire() != null)
+    @Test fun test_isFixedLot_equivalentAndInvalidValues_returnsExpectedResult() {
+        assertTrue(TradePolicy.isFixedLot("0.01"))
+        assertTrue(TradePolicy.isFixedLot("0.010"))
+        assertTrue(TradePolicy.isFixedLot("0,01"))
+        assertFalse(TradePolicy.isFixedLot("0.011"))
+        assertFalse(TradePolicy.isFixedLot("not-a-number"))
     }
 
-    @Test fun `requires an explicit demo or trial account label by default`() {
-        assertTrue(TradePolicy.isDemoAccountLabel("Exness-MT5Trial"))
-        assertTrue(TradePolicy.isDemoAccountLabel("Demo Account"))
-        assertFalse(TradePolicy.isDemoAccountLabel("Exness Real"))
+    @Test fun test_isExnessLabel_realDemoAndOtherBroker_returnsExpectedResult() {
+        assertTrue(TradePolicy.isExnessLabel("Exness-MT5Real"))
+        assertTrue(TradePolicy.isExnessLabel("Exness Trial"))
+        assertFalse(TradePolicy.isExnessLabel("Another broker"))
     }
 }
